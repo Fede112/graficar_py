@@ -53,20 +53,28 @@ ax2 = fig.add_subplot(1,2,2)
 # Setear ejes y grid
 ###
 
-ax1.legend(numpoints=1)
 ax1.set_xlabel('Temperatura')
 ax1.set_ylabel(u'Hmedia')
 ax1.set_xlim([0,100])
 ax1.set_ylim([0,100])
 ax1.grid(color='lightgrey', linestyle='-.')
 
-ax2.legend(numpoints=1)
 ax2.set_xlabel('Temperatura')
 ax2.set_ylabel(u'Mmedia')
 ax2.grid(color='lightgrey', linestyle='-.')
 
 
 fig.tight_layout() # Para que no pisen los graficos
+
+
+####################################################################################################################
+
+###
+# Agregar titulo o texto
+###
+
+# ax.text(1.02, 1.1, 'T:' + str(0), horizontalalignment='left', transform=ax.transAxes, color='k')
+# ax.set_title(label, fontdict=None, loc='center')
 
 ####################################################################################################################
 
@@ -111,6 +119,8 @@ fig.tight_layout() # Para que no pisen los graficos
 
 ax1.plot(temp, Hmedia, label = u'Presión','.',  markersize=1) # El u antes del label está para que tome los acentos
 ax2.plot(temp, Mmedia, label = 'Mmedia')
+ax1.legend(numpoints=1)
+ax2.legend(numpoints=1)
 
 
 
