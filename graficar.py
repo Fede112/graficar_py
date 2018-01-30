@@ -74,7 +74,7 @@ fig.tight_layout() # Para que no pisen los graficos
 ###
 
 # ax.text(1.02, 1.1, 'T:' + str(0), horizontalalignment='left', transform=ax.transAxes, color='k')
-# ax.set_title(label, fontdict=None, loc='center')
+# ax.set_title(u'Título', fontdict=None, loc='center')
 
 ####################################################################################################################
 
